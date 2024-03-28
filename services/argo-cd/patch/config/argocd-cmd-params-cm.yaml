@@ -5,3 +5,5 @@ metadata:
   labels:
     app.kubernetes.io/name: argocd-cmd-params-cm
     app.kubernetes.io/part-of: argocd
+data: 
+  repo.server: "host.docker.internal:8081"
