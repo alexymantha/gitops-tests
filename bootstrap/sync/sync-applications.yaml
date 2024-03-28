@@ -15,7 +15,7 @@ spec:
   project: application-sync
   source:
     path: applications/
-    repoURL: https://github.com/agaudreault/gitops-tests
+    repoURL: https://github.com/alexymantha/gitops-tests
     targetRevision: main
     directory:
       recurse: true
