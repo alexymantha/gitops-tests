@@ -16,4 +16,4 @@ spec:
     - namespace: 'argocd'
       name: 'in-cluster'
   sourceRepos:
-    - 'https://github.com/agaudreault/gitops-tests'
+    - 'https://github.com/alexymantha/gitops-tests'
