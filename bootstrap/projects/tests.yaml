@@ -19,3 +19,4 @@ spec:
       name: 'production-2'
   sourceRepos:
     - 'https://helm.github.io/examples'
+    - 'https://github.com/argoproj/argocd-example-apps'
