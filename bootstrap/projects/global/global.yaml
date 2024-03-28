@@ -14,3 +14,4 @@ spec:
       kind: '*'
   sourceRepos:
     - 'https://github.com/alexymantha/gitops-tests'
+    - 'https://github.com/agaudreault/gitops-tests'
