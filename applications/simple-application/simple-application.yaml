@@ -28,7 +28,7 @@ spec:
           revision: main
   template:
     metadata:
-      name: 'tests.simple-application.{{name}}'
+      name: 'tests.guestbook.{{name}}'
       annotations:
         argocd.argoproj.io/manifest-generate-paths: .;../values.yaml;
     spec:
@@ -37,16 +37,12 @@ spec:
         name: '{{name}}'
       project: tests
       source:
-        path: services/simple-application/{{metadata.labels.environment}}
-        repoURL: https://github.com/alexymantha/gitops-tests
-        targetRevision: '{{values.revision}}'
+        path: helm-guestbook
+        repoURL: https://github.com/argoproj/argocd-example-apps.git
+        targetRevision: HEAD
         helm:
-          releaseName: simple-application
+          releaseName: guestbook
           ignoreMissingValueFiles: true
-          valueFiles:
-            - '../values.yaml'
-            - 'values.yaml'
-            - 'values-{{name}}.yaml'
       syncPolicy:
         automated:
           prune: true
